@@ -3,7 +3,6 @@ pip-log.txt
 tmp/*
 db/
 test_db/
-media/*
 .idea/*
 .templates/
 .templates
