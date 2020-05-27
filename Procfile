@@ -1,0 +1,1 @@
+web: gunicorn vi-resize.wsgi

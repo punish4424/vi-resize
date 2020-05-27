@@ -1,0 +1,13 @@
+.idea/
+pip-log.txt
+tmp/*
+db/
+test_db/
+media/*
+.idea/*
+.templates/
+.templates
+CACHE
+CACHE/*
+venv/*
+__pycache__/*
