@@ -64,11 +64,11 @@ class Resize(models.Model):
         if 'image' in self.file.file.content_type:
             im = Image.open(self.file)
             output = BytesIO()
-            im = im.resize((1200, 600))
-            im.save(output, format='JPEG', quality=100)
+            im = im.resize((956, 1004))
+            im.save(output, format='PNG', quality=100)
             output.seek(0)
-            self.file = InMemoryUploadedFile(output, 'ImageField', "%s.jpg" % self.file.name.split('.')[0],
-                                             'image/jpeg', sys.getsizeof(output), None)
+            self.file = InMemoryUploadedFile(output, 'ImageField', "%s.png" % self.file.name.split('.')[0],
+                                             'image/png', sys.getsizeof(output), None)
             super(Resize, self).save()
             return True
 
